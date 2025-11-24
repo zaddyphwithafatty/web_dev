@@ -22,3 +22,12 @@ img{
     align-items: center;
     flex-wrap: wrap;
 }
+p{
+    font-family: "bonheur rotale", cursive;
+font-weight: 400;
+font-style: normal;
+}
+
+#hidden{
+    display: none;
+}

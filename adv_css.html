@@ -5,22 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>advanced css</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        showing ="none"
+        function show(){
+            alert("the content has changed")
+            if(showing == "none"){
+            document.getElementById("hidden").style.display = "block"
+            showing = "block"
+            document.getElementById("button").innerHTML
+            = "show less"
+            }else{
+                document.getElementById("hidden").style.display
+                = "none"
+                showing = "none"
+                 document.getElementById("button").innerHTML
+            = "show more"
+            }
+        }
+
+        function change(){
+            document.getElementById("one").src="https://docs.google.com/document/d/1HaTTLkJZ2NXyV_nBVmMClIiCjumn6Vyshz9UZtTBurI/edit?tab=t.0......................................................................"
+        }
+        images =["https:karsh.org/wordpress/wp-content/uploads/2016/10/Yousuf-Karsh-Albert-Einstein-1948-02-1899x1960.jpg"]
+        index = 0
+        function change(){
+            document.getElementById("one").src =images[index]
+            index = 1
+            if(inde>= images.lenth){
+                index = 0
+            }
+        }
+
+        function colors(){
+            document.getElementById("left").style.color=document.getelementbyId("user").value
+        }
+    </script>
 </head>
 <body>
     <h1>title</h1>
-    <button>click me</button>
+    <input type="color" id="user">
     <div id="content-wrapper">
     <div id="left">
-        <p>Basketball is not just a game, its a lifestyle. Many people have devoted and put so much tiem and effort into this sport for a chance of being drafted. the amount of people who have given all of their life to basketball is enormous, day after day, practice after practice, game after game. Some people see people just going up and down the court with a basketball but what the players see is a battle, finding out what team is better than who. Its a battle on who will move on to the next game and who will stay behind wondering what if. Basketball is a very important sport to a lot of people. Basketball isnt just a game but its also an escape from reality. basketball will never leave your side, no matter what is happening in life basketball will always be there for you no matter the suituation
+        <p>Basketball is not just a game, its a lifestyle. Many people have devoted and put so much tiem and effort into this sport for a chance of being drafted. the amount of people who have given all of their life to basketball is enormous, day after day, practice after practice, game after game. Some people see people just going up and down the court with a basketball but what the players see is a battle, finding out what team is better than who. Its a battle on who will move on to the next game and who will stay behind wondering what if. Basketball is a very important sport to a lot of people. Basketball isnt just a game but its also an escape from reality. basketball will never leave your side, no matter what is happening in life basketball will always be there for you no matter the suituation</p>
 <br><br>
+<p id="hidden">
 ;alkdsjf ;aksdjf a;sjfd ;la fjfkjdife n i eie i uiufoele  oud dou l do dlue  eu eu eeooeu eoeu oeuoe u euueueu  u oddldoe d ud ekfjs foo oi ejf ood  dflsjfls dfe hi lijdijkidi  i ei idi id id a;dfjlkdjldk jdid d dkdidiidkes ds f;lkjlkjd d djdjjkssi is i kw wkia aksiiskwa  dlo l jwiiskisiis.</p>
         </div>
+        <button id="button" onclick={show()}>show more</button>
         <div id="right">
         <img id="one" alt="faces" src="https://cdn.bleacherreport.net/images_root/slides/photos/000/791/675/109813237_original.jpg?1300221121">
         <img id="two" alt="trees" src="https://wp.cavsnation.com/wp-content/uploads/2016/12/stephen-curry-kyrie-irving-nba-finals-cleveland-cavaliers-golden-state-warriors-850x560-e1483371140212.jpg">
+        <img id="two" alt="https://static.wikia.nocookie.net/dragonballfighterz/images/7/76/Trunks_Artwork.png/revision/latest?cb=20180902173709"/>
 
         </div>
-</div>
+        </div>
 
 </body>
 </html>
