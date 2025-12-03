@@ -1,16 +1,16 @@
-from flask import Flask, render_template, request, redirecnt, url_for
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
 @app.route("/", methods=["POST","GET"]) 
 def home():
-    if request.methdo == "POST":
+    if request.method == "POST":
         return redirect(url_for("user", name=request.form["name"]))
     return render_template("index.html")
 
 @app.route("/contact")
 def contact():
-    return "<p>dont contact me. I don't want to tak to you.</p>"
+    return render_template("contact.html")
 
 @app.route("/<name>")
 def user(name):
