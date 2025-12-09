@@ -1,0 +1,59 @@
+<!--EM 7th HTML basics Notes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hidden Image</title>
+
+    <style>
+
+        #secret-img{
+            display: none;
+        }
+
+        #hidespot:hover + #secret-img{
+            display: block;
+        }
+
+        #vez {
+            width: 20%;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Derrick Rose</h1>
+
+    <p>
+        Derrick Rose is a basketball player known for his gameplays but 
+        also how mnay time he was injured during his career. 
+        Derrick rose played in the teach Chicago Bulls. all of the fans love him.
+    </p>
+
+    <p>
+        the list under shows all of the injuries that derrick rose had that caused him to retire.
+    </p>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1dktd2qBeJ62FJGBNthVgk_kY11Gc-eYCtw&s" 
+         alt="Derrick Rose" id="vez">
+
+    <h2>injureis he had</h2>
+
+    <ul>
+        <li>torn left ACL</li>
+        <li>Torn right medial meniscus</li>
+        <li>Torn right medial meniscus</li>
+        <li>Torn left medial meniscus</li>
+        <li>Orbital fracture</li>
+    </ul>
+
+    <div id="hidespot">look over here</div>
+
+    <img id="secret-img"
+         src="https://a.espncdn.com/photo/2012/0428/nba_g_rose11_576.jpg"
+         alt="Hidden Derrick Rose">
+
+</body>
+</html>
